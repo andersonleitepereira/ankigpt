@@ -145,12 +145,4 @@ margin-bottom: -2.5px;
       85.1% { opacity: 0; }
       100% { opacity: 0; }
   }
-  @keyframes flipInY {
-	0% {transform: rotateY(180deg)} 
-	100% {}
- } .ef-flip {animation: .3s ease-out 0s 1 flip;
-}
-.flip {
-    backface-visibility: visible !important;
-    animation: flipInY 0.5s forwards;
-}
+  
