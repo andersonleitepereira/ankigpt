@@ -9,7 +9,12 @@ body{
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: #161623;
+	background: rgba(17,17,31,255);
+	background-image: url('animation_Contrast_tlp870qu.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 70%;
+	background-position: center top;
 }
 body::before{
 	content: '';
@@ -18,7 +23,7 @@ body::before{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(#f00, #f0f);
+	background: linear-gradient(rgb(53, 186, 146), rgb(7, 96, 110));
 	clip-path: circle(30% at right 70%);
 }
 body::after{
@@ -43,7 +48,7 @@ body::after{
 .container .card{
 	position: relative;
 	width: 420px;
-	height: 380px;
+	height: 350px;
 	margin: 30px;
 	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 	border-radius: 15px;
@@ -55,6 +60,7 @@ body::after{
 	border-top: 1px solid rgba(255, 255, 255, 0.5);
 	border-left: 1px solid rgba(255, 255, 255, 0.5);
 	backdrop-filter: blur(20px);
+	visibility: hidden;  /* Adicionado */
 }
 .container .card .content{
 	padding: 20px;
@@ -62,6 +68,7 @@ body::after{
 	transform: translateY(100px);
 	opacity: 0;
 	transition: 0.5s;
+
 }
 .container .card:hover .content{
 	transform: translateY(0px);
@@ -138,3 +145,12 @@ margin-bottom: -2.5px;
       85.1% { opacity: 0; }
       100% { opacity: 0; }
   }
+  @keyframes flipInY {
+	0% {transform: rotateY(180deg)} 
+	100% {}
+ } .ef-flip {animation: .3s ease-out 0s 1 flip;
+}
+.flip {
+    backface-visibility: visible !important;
+    animation: flipInY 0.5s forwards;
+}
