@@ -15,7 +15,7 @@
                 <h2>ANKI</h2>
                 <h3>Card 01</h3>
                 <div class="typewriter">
-                    <h1 id="text">Prepare-se para testemunhar a mais audaciosa revolução no campo do aprendizado. Apresentamos o ANKIGPT - a interseção épica entre a plataforma de memorização de flashcards Anki e a sofisticação de ponta do modelo de inteligência artificial.</h1>
+                    <h1 id="text">Já imaginou o Chatgpt comentando todos seus flash cards? Prepare-se para testemunhar a mais audaciosa revolução no campo do aprendizado. Apresentamos o ANKIGPT.</h1>
                 </div>
                 <a href="">AnkiGPT</a>
             </div>
@@ -92,6 +92,19 @@
                 typeWriter2();
             });
         });
+
+window.onload = function() {
+    setTimeout(function() {
+        var cards = document.querySelectorAll(".card");
+        cards.forEach(function(card) {
+            card.style.visibility = "visible";
+            card.classList.add('flip');  // adicione esta linha
+        });
+    }, 4000);
+};
+
+
+
     </script>
       
 </body>
