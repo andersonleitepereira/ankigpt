@@ -93,8 +93,9 @@ body::after{
 @media (max-width: 600px) {
     .container .card .content h1{
 	    font-size: 0.85em;
-	    color: #fff;
+	    color: #ffffff99;
 	    z-index: 1;
+	    text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
     }
 }
 @media (max-width: 600px) {
@@ -135,7 +136,7 @@ body::after{
 }
 
 .typewriter {
-    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Calibri', monospace;
     width: 100%;  
 	text-align: justify;
 	padding-left: 20px;
@@ -148,7 +149,7 @@ body::after{
     display: inline-block;
         font-weight: normal;
   font-size: 18px;
-font-family: Helvetica Neue;
+font-family: Calibri;
     line-height: 1.5;
     tab-size: 4;
   }
