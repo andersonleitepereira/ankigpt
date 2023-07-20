@@ -13,8 +13,8 @@ body{
 	background-image: url('animation_Contrast_tlp870qu.gif');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-size: 70%;
-	background-position: center top;
+	background-size: 60%;
+	background-position: center 30%;
 }
 body::before{
 	content: '';
