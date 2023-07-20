@@ -92,7 +92,7 @@ body::after{
 
 @media (max-width: 600px) {
     .container .card .content h3{
-	    font-size: 0.8em;
+	    font-size: 0.4em;
 	    color: #fff;
 	    z-index: 1;
     }
