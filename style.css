@@ -148,8 +148,8 @@ h3{
 @media (max-width: 600px) {
     .container .card .content h1{
 		color: #ffffff99;
-    	font-weight: normal;
-  		font-size: 16px;
+    	font-weight: 500;
+  		font-size: 17px;
 		font-family: calibri;
     	line-height: 1.5;
     	tab-size: 4;
