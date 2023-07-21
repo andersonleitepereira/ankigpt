@@ -175,6 +175,8 @@ h3{
 }
 @media (max-width: 600px) {
     h3{
+		margin-top: 20px;
+		right: 10%;
 	    font-size: 1.3em;
 	    color: #fff;
 	    z-index: 1;
