@@ -192,7 +192,7 @@ h3{
 	.container .card{
 	position: relative;
 	width: 370px;
-	height: 285px;
+	height: 290px;
 	margin-bottom: 30px;
 	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 	border-radius: 15px;
@@ -233,7 +233,7 @@ h3{
 		position: fixed;
 		display: inline-block;
 		padding: 4px 10px;
-		margin-top: 220px;
+		margin-top: 225px;
 		background: #fff;
 		color: #000;
 		border-radius: 20px;
