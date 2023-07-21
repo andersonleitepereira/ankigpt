@@ -88,6 +88,7 @@ body::after{
 	text-align: center;
 	transform: translateY(100px);
 	opacity: 1;
+	margin-top: -10%;
 	transition: 0.5s;
 	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
@@ -105,7 +106,6 @@ h2{
 	color: rgba(255, 255, 255, 0.05);
 	filter: blur(4px);
 	pointer-events: none;
-	
 	position: fixed;
 	font-weight: 900;
 }
@@ -116,7 +116,7 @@ a {
 	right: 30%;
 	display: inline-block;
 	padding: 8px 20px;
-	margin-top: 290px;
+	margin-top: 270px;
 	background: #fff;
 	color: #000;
 	border-radius: 20px;
@@ -148,7 +148,6 @@ h3{
 @media (max-width: 600px) {
     .container .card .content h1{
 		color: #ffffff99;
-		margin-top: -170px;
     	font-weight: normal;
   		font-size: 16px;
 		font-family: calibri;
@@ -170,7 +169,6 @@ h3{
 		color: rgba(255, 255, 255, 0.05);
 		filter: blur(4px);
 		pointer-events: none;
-		margin-top: -50%;
 		position: fixed;
 		font-weight: 900;
     }
@@ -181,7 +179,6 @@ h3{
 	    color: #fff;
 	    z-index: 1;
 	    text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
-		margin-top: -56%;
 	    	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
@@ -192,16 +189,14 @@ h3{
 @media (max-width: 600px) {
 	.container .card{
 	position: relative;
-	width: 350px;
-	height: 270px;
-	margin: 30px;
+	width: 370px;
+	height: 280px;
+	margin-bottom: 30px;
 	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 	border-radius: 15px;
 	background: rgba(255, 255, 255, 0.1);
 	overflow: hidden;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	border-top: 1px solid rgba(255, 255, 255, 0.5);
 	border-left: 1px solid rgba(255, 255, 255, 0.5);
 	backdrop-filter: blur(20px);
@@ -218,11 +213,25 @@ h3{
 }
 }
 @media (max-width: 600px) {
+	.container .card .content{
+		padding: 20px;
+		margin-top: -15%;
+		transform: translateY(100px);
+		opacity: 1;
+		transition: 0.5s;
+		font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+		-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+		-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+		-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+		-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	}
+}
+@media (max-width: 600px) {
     a{
 		position: fixed;
 		display: inline-block;
 		padding: 4px 10px;
-		margin-top: 190px;
+		margin-top: 220px;
 		background: #fff;
 		color: #000;
 		border-radius: 20px;
