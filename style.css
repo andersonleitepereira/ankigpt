@@ -1,11 +1,19 @@
 *{
 	font-family: 'Calibri', 'Helvetica', 'Open Sans';
+	-webkit-font-family: 'Calibri', 'Helvetica', 'Open Sans';
+	-moz-font-family: 'Calibri', 'Helvetica', 'Open Sans';
+	-o-font-family: 'Calibri', 'Helvetica', 'Open Sans';
+	-ms-font-family: 'Calibri', 'Helvetica', 'Open Sans';
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 body{
 	font-family: 'Calibri', 'Helvetica', 'Open Sans';
+	-webkit-font-family: 'Calibri', 'Helvetica', 'Open Sans';
+	-moz-font-family: 'Calibri', 'Helvetica', 'Open Sans';
+	-o-font-family: 'Calibri', 'Helvetica', 'Open Sans';
+	-ms-font-family: 'Calibri', 'Helvetica', 'Open Sans';
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -66,7 +74,11 @@ body::after{
 	-o-backdrop-filter: blur(20px);
 	-ms-backdrop-filter: blur(20px);
 	visibility: hidden;  /* Adicionado */
-	font-family: calibri;
+	font-family: 'Calibri', 'Helvetica', 'Open Sans';
+	-webkit-font-family: 'Calibri', 'Helvetica', 'Open Sans';
+	-moz-font-family: 'Calibri', 'Helvetica', 'Open Sans';
+	-o-font-family: 'Calibri', 'Helvetica', 'Open Sans';
+	-ms-font-family: 'Calibri', 'Helvetica', 'Open Sans';
 }
 .container .card .content{
 	padding: 20px;
