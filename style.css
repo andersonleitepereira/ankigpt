@@ -71,11 +71,11 @@ body::after{
 	display: flex;
 	border-top: 1px solid rgba(255, 255, 255, 0.5);
 	border-left: 1px solid rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(20px);
-	-webkit-backdrop-filter: blur(20px);
-	-moz-backdrop-filter: blur(20px);
-	-o-backdrop-filter: blur(20px);
-	-ms-backdrop-filter: blur(20px);
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	-moz-backdrop-filter: blur(30px);
+	-o-backdrop-filter: blur(30px);
+	-ms-backdrop-filter: blur(30px);
 	visibility: hidden;  /* Adicionado */
 	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
@@ -201,11 +201,11 @@ h3{
 	display: flex;
 	border-top: 1px solid rgba(255, 255, 255, 0.5);
 	border-left: 1px solid rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(20px);
-	-webkit-backdrop-filter: blur(20px);
-	-moz-backdrop-filter: blur(20px);
-	-o-backdrop-filter: blur(20px);
-	-ms-backdrop-filter: blur(20px);
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	-moz-backdrop-filter: blur(30px);
+	-o-backdrop-filter: blur(30px);
+	-ms-backdrop-filter: blur(30px);
 	visibility: hidden;  /* Adicionado */
 			font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
