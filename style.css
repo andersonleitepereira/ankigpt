@@ -1,10 +1,11 @@
 *{
-	font-family: 'Calibri', Arial, sans-serif;
+	font-family: 'Calibri', 'Helvetica', 'Open Sans';
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 body{
+	font-family: 'Calibri', 'Helvetica', 'Open Sans';
 	display: flex;
 	justify-content: center;
 	align-items: center;
