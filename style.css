@@ -176,7 +176,7 @@ h3{
 @media (max-width: 600px) {
     h3{
 		margin-top: 20px;
-		right: 20%;
+		right: 10%;
 	    font-size: 1.3em;
 	    color: #fff;
 	    z-index: 1;
@@ -233,7 +233,7 @@ h3{
 		position: fixed;
 		display: inline-block;
 		padding: 4px 10px;
-		margin-top: 210px;
+		margin-top: 220px;
 		background: #fff;
 		color: #000;
 		border-radius: 20px;
