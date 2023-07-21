@@ -11,24 +11,24 @@
 <body>
     <div class="container">
         <div class="card">
+            <h2>ANKI</h2>
+            <h3>Card 01</h3>
             <div class="content">
-                <h2>ANKI</h2>
-                <h3>Card 01</h3>
                 <div class="typewriter">
                     <h1 id="text">Já imaginou o Chatgpt comentando todos seus flash cards? Prepare-se para testemunhar a mais audaciosa revolução no campo do aprendizado. Apresentamos o ANKIGPT.</h1>
                 </div>
-               <a href="https://pay.hotmart.com/C85019371I" id="ankigptButton">Adquirir AnkiGPT</a>
             </div>
+            <a href="https://pay.hotmart.com/C85019371I" id="ankigptButton">Adquirir AnkiGPT</a>
         </div>
         <div class="card">
+            <h2>GPT</h2>
+            <h3>Card 02</h3>
             <div class="content">
-                <h2>GPT</h2>
-                <h3>Card 02</h3>
                 <div class="typewriter">
                     <h1 id="text2">ANKIGPT é um complemento para o Anki e um turbo para seu cérebro! Ele irá iluminar cada card, cada conceito, cada dúvida! É uma explosão educacional sem precedentes, que você só encontra aqui.</h1>
                 </div>
-                <a href="https://pay.hotmart.com/C85019371I" id="ankigptButton">Adquirir AnkiGPT</a>
             </div>
+            <a href="https://pay.hotmart.com/C85019371I" id="ankigptButton">Adquirir AnkiGPT</a>
         </div>
     </div>
 
@@ -42,68 +42,68 @@
         });
     </script>
 
-    <script>
-        // Esta função extrai o texto puro de um string HTML/CSS
-        function extractContent(s) {
-            var parser = new DOMParser();
-            var parsedHtml = parser.parseFromString(s, 'text/html');
-            return parsedHtml.body.textContent || "";
-        }
-    
-        var i = 0;
-        var tag = document.getElementById("text");
-        var originalText = tag.innerHTML;
-        var txt = extractContent(originalText).split(" ");  // separar o texto em palavras
-        var speed = 150;  // ajustar a velocidade de acordo
-    
-        function typeWriter() {
-            if (i < txt.length) {
-                tag.innerHTML += txt[i] + " ";  // adicionar a próxima palavra
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
+<script>
+    // Esta função extrai o texto puro de um string HTML/CSS
+    function extractContent(s) {
+        var parser = new DOMParser();
+        var parsedHtml = parser.parseFromString(s, 'text/html');
+        return parsedHtml.body.textContent || "";
+    }
 
-        var i2 = 0;
-        var tag2 = document.getElementById("text2");
-        var originalText2 = tag2.innerHTML;
-        var txt2 = extractContent(originalText2).split(" ");  // separar o texto em palavras
-    
-        function typeWriter2() {
-            if (i2 < txt2.length) {
-                tag2.innerHTML += txt2[i2] + " ";  // adicionar a próxima palavra
-                i2++;
-                setTimeout(typeWriter2, speed);
-            }
+    var i = 0;
+    var tag = document.getElementById("text");
+    var originalText = tag.innerHTML;
+    var txt = extractContent(originalText).split(" ");  // separar o texto em palavras
+    var speed = 150;  // ajustar a velocidade de acordo
+
+    function typeWriter() {
+        if (i < txt.length) {
+            tag.innerHTML += txt[i] + " ";  // adicionar a próxima palavra
+            i++;
+            setTimeout(typeWriter, speed);
         }
+    }
 
-        // Adicione um manipulador de eventos de "mouseenter" (hover) aos elementos .card
-        var cards = document.querySelectorAll(".card");
-        cards.forEach(function(card) {
-            card.addEventListener("mouseenter", function() {
-                tag.style.display = "inline";
-                tag.innerHTML = "";  // Limpar o conteúdo original
-                i = 0; // Resetar o contador
-                typeWriter();
+    var i2 = 0;
+    var tag2 = document.getElementById("text2");
+    var originalText2 = tag2.innerHTML;
+    var txt2 = extractContent(originalText2).split(" ");  // separar o texto em palavras
 
-                tag2.style.display = "inline";
-                tag2.innerHTML = "";  // Limpar o conteúdo original
-                i2 = 0; // Resetar o contador
-                typeWriter2();
+    function typeWriter2() {
+        if (i2 < txt2.length) {
+            tag2.innerHTML += txt2[i2] + " ";  // adicionar a próxima palavra
+            i2++;
+            setTimeout(typeWriter2, speed);
+        }
+    }
+
+    // Ao carregar a página, iniciar as funções typeWriter e typeWriter2
+    window.onload = function() {
+        // Limpar o conteúdo original
+        tag.innerHTML = "";
+        tag2.innerHTML = "";
+
+        // Atraso para iniciar as funções typeWriter e typeWriter2
+        setTimeout(function() {
+            typeWriter();
+        }, 6000); // 4000 milissegundos é igual a 4 segundos
+        
+        // Atraso para exibir os cards
+        setTimeout(function() {
+            var cards = document.querySelectorAll(".card");
+            cards.forEach(function(card) {
+                card.style.visibility = "visible";
             });
-        });
+        }, 4000);
 
-window.onload = function() {
-    setTimeout(function() {
-        var cards = document.querySelectorAll(".card");
-        cards.forEach(function(card) {
-            card.style.visibility = "visible";
-        });
-    }, 4000);
-};
+   // Iniciar a função typeWriter2 após 9 segundos
+   setTimeout(function() {
+            typeWriter2();
+        }, 11000);
+    };
+</script>
 
 
-    </script>
       
 </body>
 
