@@ -191,8 +191,8 @@ h3{
 @media (max-width: 600px) {
 	.container .card{
 	position: relative;
-	width: 370px;
-	height: 280px;
+	width: 360px;
+	height: 270px;
 	margin-bottom: 30px;
 	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 	border-radius: 15px;
