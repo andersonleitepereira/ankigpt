@@ -109,17 +109,12 @@ h2{
 	margin-top: -50%;
 	position: fixed;
 	font-weight: 900;
-	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 }
 a {
 	position: fixed;
 	display: inline-block;
 	padding: 8px 20px;
-	margin-top: 250px;
+	margin-top: 260px;
 	background: #fff;
 	color: #000;
 	border-radius: 20px;
@@ -175,11 +170,6 @@ h3{
 		margin-top: -50%;
 		position: fixed;
 		font-weight: 900;
-	    	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
     }
 }
 @media (max-width: 600px) {
