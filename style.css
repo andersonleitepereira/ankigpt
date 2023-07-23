@@ -156,15 +156,13 @@ h3{
 
 @media (max-width: 600px) {
     .container .card .content h1 {
-		position: relative;
-		justify-content: center;
-		align-items: center;
 		color: #ffffff;
 		font-weight: 500;
-		  font-size: 20px;
+		  font-size: 16px;
 		font-family: Calibri;
 		line-height: 1.5;
 		tab-size: 4;
+		margin-top: -80px;
 		text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
 			  font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 		-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
@@ -206,9 +204,9 @@ h3{
 @media (max-width: 600px) {
 	.container .card{
 	position: relative;
-	margin-left: -14%;
-	width: 340px;
-	height: 300px;
+	margin-left: -8%;
+	width: 240px;
+	height: 320px;
 	background: rgba(56, 56, 56, 0.1);
 	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
@@ -233,7 +231,6 @@ h3{
 @media (max-width: 600px) {
 	.container .card .content{
 		opacity: 1;
-
 	}
 }
 @media (max-width: 600px) {
