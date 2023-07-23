@@ -58,15 +58,17 @@ body::after{
 	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	
+
 }
+
 .container .card{
 	position: relative;
-	width: 420px;
+	width: 520px;
 	height: 350px;
-	margin: 30px;
-	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 	border-radius: 15px;
-	background: rgba(255, 255, 255, 0.1);
+	background: rgba(56, 56, 56, 0.1);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
 	display: flex;
 	border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -82,41 +84,48 @@ body::after{
 	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	justify-content: center;
+	align-items: center;
+
 }
+	
 .container .card .content{
 	padding: 20px;
 	text-align: center;
 	transform: translateY(100px);
 	opacity: 1;
-	margin-top: -10%;
+	margin-top: -50%;
 	transition: 0.5s;
 	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	
+	
 }
 .container .card:hover .content{
 	opacity: 1;
+	
 }
 h2{
-	right: 10%;
-	font-size: 9em;
-	margin-top: -5%;
+	left: 25%;
+	font-size: 7em;
+	top: -10%;
 	color: rgba(255, 255, 255, 0.05);
-	filter: blur(4px);
+	filter: blur(5px);
 	pointer-events: none;
 	position: fixed;
 	font-weight: 900;
 }
 a {
+	font-size: 16px;
 	position: fixed;
 	justify-content: center;
 	align-items: center;
-	right: 30%;
 	display: inline-block;
-	padding: 8px 20px;
-	margin-top: 270px;
+	padding: 6px 10px;
+	margin-top: 220px;
 	background: #fff;
 	color: #000;
 	border-radius: 20px;
@@ -131,8 +140,8 @@ a {
 }
 h3{
 	font-size: 1.6em;
-	color: #fff;
-	margin-top: 30px;
+	color: #ffffff99;
+	margin-top: -250px;
 	right: 10%;
 	z-index: 1;
 	font-family: calibri;
@@ -146,42 +155,48 @@ h3{
 /* Estilos para telas com 600px ou menos de largura */
 
 @media (max-width: 600px) {
-    .container .card .content h1{
-		color: #ffffff99;
-    	font-weight: 500;
-  		font-size: 17px;
-		font-family: calibri;
-    	line-height: 1.5;
-    	tab-size: 4;
-	text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
-	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+    .container .card .content h1 {
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		color: #ffffff;
+		font-weight: 500;
+		  font-size: 20px;
+		font-family: Calibri;
+		line-height: 1.5;
+		tab-size: 4;
+		text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+			  font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+		-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+		-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+		-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+		-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	    
 	}
 }
+
 @media (max-width: 600px) {
-    .container .card .content h2{
-		right: 10%;
-		font-size: 7em;
+	h2{
+		left: 20%;
+		font-size: 5.5em;
+		top: -10%;
 		color: rgba(255, 255, 255, 0.05);
-		filter: blur(4px);
+		filter: blur(5px);
 		pointer-events: none;
 		position: fixed;
 		font-weight: 900;
     }
 }
 @media (max-width: 600px) {
-    .container .card .content h3{
-		margin-top: 20px;
-		right: 10%;
-	    font-size: 1.3em;
-	    color: #fff;
-	    z-index: 1;
-	    text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
-	    	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	h3{
+	font-size: 1.2em;
+	color: #ffffff99;
+	margin-top: -220px;
+	right: 10%;
+	z-index: 1;
+	font-family: calibri;
+	position: fixed;
+	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
@@ -191,12 +206,11 @@ h3{
 @media (max-width: 600px) {
 	.container .card{
 	position: relative;
-	width: 370px;
-	height: 290px;
-	margin-bottom: 30px;
+	margin-left: -14%;
+	width: 340px;
+	height: 300px;
+	background: rgba(56, 56, 56, 0.1);
 	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-	border-radius: 15px;
-	background: rgba(255, 255, 255, 0.1);
 	overflow: hidden;
 	display: flex;
 	border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -207,33 +221,27 @@ h3{
 	-o-backdrop-filter: blur(30px);
 	-ms-backdrop-filter: blur(30px);
 	visibility: hidden;  /* Adicionado */
-			font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	justify-content: center;
+	align-items: center;
 }
 }
 @media (max-width: 600px) {
 	.container .card .content{
-		padding: 20px;
-		margin-top: -15%;
-		transform: translateY(100px);
 		opacity: 1;
-		transition: 0.5s;
-		font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-		-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-		-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-		-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-		-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+
 	}
 }
 @media (max-width: 600px) {
     a{
 		position: fixed;
 		display: inline-block;
-		padding: 4px 10px;
-		margin-top: 225px;
+		padding: 5px 10px;
+		margin-top: 220px;
 		background: #fff;
 		color: #000;
 		border-radius: 20px;
@@ -248,15 +256,16 @@ h3{
 	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
     }
 }
-.container .card .content p{
-	font-size: 1em;
-	color: #fff;
-	font-weight: 300;
+@media (max-width: 600px) {
+	.logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+    }
 }
-
 .typewriter {
     font-family: 'Calibri', monospace;
-	text-align: justify;
+	text-align: center;
 	padding-left: 20px;
 	padding-right: 20px;
 		font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
@@ -267,13 +276,13 @@ h3{
 
   }
   h1 {
-	color: #ffffff99;
-    font-weight: 400;
-  	font-size: 19px;
+	color: #ffffff;
+    font-weight: 500;
+  	font-size: 22px;
 	font-family: Calibri;
 	line-height: 1.5;
     tab-size: 4;
-text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
+	text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
 	  	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
@@ -283,7 +292,7 @@ text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
   h1:after{
    content: '';
     display: inline-block;
-    background-color: #FFFFFF99;
+    background-color: #FFFFFF;
     margin-left: 2px;
 margin-bottom: -2.5px;
     height: 17px;
@@ -301,4 +310,12 @@ margin-bottom: -2.5px;
       85.1% { opacity: 0; }
       100% { opacity: 0; }
   }
- 
+  .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo img {
+	width: 200px;
+}
