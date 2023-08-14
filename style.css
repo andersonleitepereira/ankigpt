@@ -18,7 +18,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: rgba(39,29,59,255);
+	background: rgba(33, 30, 41);
 	background-image: url('customcolor_logo_customcolor_background.png');
 	background-repeat: no-repeat;
 	background-size: cover;
