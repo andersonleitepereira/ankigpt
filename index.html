@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANKIGPT</title>
+    <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
     <!-- ======= Styles ====== -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -582,7 +582,7 @@ $('.mdw-stacked-card-area').each(function(i){
             <div class="elementor-element elementor-element-da124c6 e-con-full e-flex e-con" data-id="da124c6" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
                     <div class="elementor-element elementor-element-7b03479 elementor-widget elementor-widget-heading" data-id="7b03479" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
-                <h3 class="elementor-heading-title elementor-size-default">Conheça nossos planos</h3>		</div>
+                <h3 class="elementor-heading-title elementor-size-default">Viva essa experiência também.</h3>		</div>
                     </div>
                     </div>
                                 </div>
@@ -723,8 +723,8 @@ $('.mdw-stacked-card-area').each(function(i){
                   <h5>Card 03</h5>
                   <div class="content">
                       <div class="typewriter">
-                          <h1 id="text3">Apresentamos a você: </h1>
-                          <div class="logo"> <img src="https://github.com/novaera2023/ankigpt/blob/main/white_logo_transparent_background.png?raw=true"></div>
+                          <h1 id="text3">Apresentamos a você:</h1>
+                          <div class="logo"> <img src="white_logo_transparent_background.png"></div>
                       </div>
                   </div>
                   <a href="https://payment.hotmart.com/next/D85768905K?off=evms66ig&bid=1691885349089" id="ankigptButton">Adquirir AnkiGPT</a>
@@ -796,70 +796,67 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-            <script>
-
-function extractContent(s) {
-    var parser = new DOMParser();
-    var parsedHtml = parser.parseFromString(s, 'text/html');
-    return parsedHtml.body.textContent || "";
-}
-
-var speed = 30;
-
-function typeWriter(i, txt, tag) {
-    if (i < txt.length) {
-        tag.innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(function() { typeWriter(i, txt, tag); }, speed);
+<script>
+    // Esta função extrai o texto puro de um string HTML/CSS
+    function extractContent(s) {
+        var parser = new DOMParser();
+        var parsedHtml = parser.parseFromString(s, 'text/html');
+        return parsedHtml.body.textContent || "";
     }
-}
 
-function restartAnimation(tagId) {
-    var tag = document.getElementById(tagId);
-    var originalText = tag.getAttribute('data-original-text');
-    tag.innerHTML = "";
-    typeWriter(0, originalText, tag);
-}
+    var i = 0;
+    var tag = document.getElementById("text");
+    var originalText = tag.innerHTML;
+    var txt = extractContent(originalText).split(" ");  // separar o texto em palavras
+    var speed = 150;  // ajustar a velocidade de acordo
 
+    function typeWriter() {
+        if (i < txt.length) {
+            tag.innerHTML += txt[i] + " ";  // adicionar a próxima palavra
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
 
-window.onload = function() {
-    var tags = ['text', 'text2', 'text3', 'text4', 'text5', 'text6'];
+    var i2 = 0;
+    var tag2 = document.getElementById("text2");
+    var originalText2 = tag2.innerHTML;
+    var txt2 = extractContent(originalText2).split(" ");  // separar o texto em palavras
 
-    // Armazenando o texto original em um atributo data-original-text
-    tags.forEach(function(tagId) {
-        var tag = document.getElementById(tagId);
-        tag.setAttribute('data-original-text', extractContent(tag.innerHTML));
-    });
+    function typeWriter2() {
+        if (i2 < txt2.length) {
+            tag2.innerHTML += txt2[i2] + " ";  // adicionar a próxima palavra
+            i2++;
+            setTimeout(typeWriter2, speed);
+        }
+    }
 
-    var swiper = new Swiper(".mySwiper", {
-        effect: "cards",
-        grabCursor: true
-    });
+    // Ao carregar a página, iniciar as funções typeWriter e typeWriter2
+    window.onload = function() {
+        // Limpar o conteúdo original
+        tag.innerHTML = "";
+        tag2.innerHTML = "";
 
-    // Inicia a animação para o primeiro slide assim que a página é carregada
-    restartAnimation(tags[0]);
+        // Atraso para iniciar as funções typeWriter e typeWriter2
+        setTimeout(function() {
+            typeWriter();
+        }, 10000); // 4000 milissegundos é igual a 4 segundos
+        
+        // Atraso para exibir os cards
+        setTimeout(function() {
+            var cards = document.querySelectorAll(".card");
+            cards.forEach(function(card) {
+                card.style.visibility = "visible";
+            });
+        }, 9000);
 
-    var cards = document.querySelectorAll(".card");
-    cards.forEach(function(card, index) {
-        card.addEventListener('click', function() {
-            // Reiniciar a animação para o slide ativo
-            restartAnimation(tags[index]);
-        });
-    });
+   // Iniciar a função typeWriter2 após 9 segundos
+   setTimeout(function() {
+            typeWriter2();
+        }, 14000);
+    };
+</script>
 
-    setTimeout(function() {
-        cards.forEach(function(card) {
-            card.style.visibility = "visible";
-        });
-    }, 0);
-};
-
-// O resto do código (extractContent, typeWriter e restartAnimation) permanece o
-
-
-
-
-            </script>
             
             
             
@@ -892,6 +889,76 @@ window.onload = function() {
     </html>
     
 
+
+
+
+
+
+
+
+    <!----------GIF CARLOS-------->
+
+
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alternar GIFs</title>
+        <style>
+            /* Todos os GIFs ocupam o mesmo espaço, mas por padrão, o segundo e terceiro são ocultos. */
+            #gif1, #gif2, #gif3 {
+                position: relative;
+                max-width: 550px;
+                margin-top: -100px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #gif2, #gif3 {
+                display: none;
+            }
+            @media (min-width: 600px){
+            #gif1, #gif2, #gif3 {
+            visibility: hidden;
+ }
+
+}
+
+        </style>
+    </head>
+    <body>
+        <img id="gif1" src="gifs/iphone (1).gif" alt="Primeiro GIF">
+        <img id="gif2" src="gifs/iphone (2).gif" alt="Segundo GIF">
+        <img id="gif3" src="gifs/iphone (3).gif" alt="Terceiro GIF">
+    
+        <script src="scripts.js"></script>
+    </body>
+    </html>
+    
+
+
+<script>
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    // Depois de 10 segundos, o primeiro GIF é ocultado e o segundo é exibido.
+    setTimeout(() => {
+        document.getElementById('gif1').style.display = 'none';
+        document.getElementById('gif2').style.display = 'block';
+
+        // Depois de 3 segundos, o segundo GIF é ocultado e o terceiro GIF é exibido.
+        setTimeout(() => {
+            document.getElementById('gif2').style.display = 'none';
+            document.getElementById('gif3').style.display = 'block';
+        }, 3000); // 3 segundos
+
+    }, 7000); // 10 segundos
+});
+
+
+
+
+</script>
 
 
 
