@@ -21,6 +21,7 @@
 	border-top: 1px solid rgba(255, 255, 255, 0.5);
 	border-left: 1px solid rgba(255, 255, 255, 0.5);
 	overflow: hidden;
+	visibility: hidden;
 	display: flex;
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(5px);
@@ -74,7 +75,7 @@ h4{
 	justify-content: center;
 	align-items: center;
 	display: inline-block;
-	padding: 10px 10px;
+	padding: 10px;
 	margin-top: 200px;
 	background: #fff;
 	color: #000;
@@ -101,122 +102,6 @@ h5{
 	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
 	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-}
-/* Estilos para telas com 600px ou menos de largura */
-@media (max-width: 1270px) {
-	.center-card .card {
-		width: 350px;
-		height: 250px;
-	}
-}
-
-
-@media (max-width: 600px) {
-    .center-card .card .content h1 {
-		color: rgba(255, 255, 255, 0.916);
-		font-weight: 600;
-		  font-size: 17px;
-		font-family: Calibri;
-		line-height: 1.5;
-		tab-size: 4;
-		margin-top: -80px;
-		text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
-			  font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-		-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-		-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-		-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-		-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	    
-	}
-}
-
-@media (max-width: 600px) {
-	h4{
-		left: 20%;
-		font-size: 4em;
-		top: -4%;
-		color: rgba(255, 255, 255, 0.05);
-		filter: blur(5px);
-		pointer-events: none;
-		position: fixed;
-		font-weight: 900;
-    }
-}
-@media (max-width: 600px) {
-	h4{
-	font-size: 1.2em;
-	color: rgba(255, 255, 255, 0.577);
-	margin-top: -220px;
-	right: 10%;
-	z-index: 1;
-	font-family: calibri;
-	position: fixed;
-	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-    }
-}
-@media (max-width: 600px) {
-	.center-card .card{
-	position: relative;
-	margin-left: -13%;
-	width: 230px;
-	height: 310px;
-	background: rgba(56, 56, 56, 0.1);
-	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-	overflow: hidden;
-	display: flex;
-	border-radius: 30px;
-	border-top: 1px solid rgba(255, 255, 255, 0.5);
-	border-left: 1px solid rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(30px);
-	-webkit-backdrop-filter: blur(30px);
-	-moz-backdrop-filter: blur(30px);
-	-o-backdrop-filter: blur(30px);
-	-ms-backdrop-filter: blur(30px);
-
-	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	justify-content: center;
-	align-items: center;
-}
-}
-@media (max-width: 600px) {
-	.center-card .card .content{
-		opacity: 1;
-	}
-}
-@media (max-width: 600px) {
-    #ankigptButton {
-		position: fixed;
-		display: inline-block;
-		padding: 5px 10px;
-		margin-top: 220px;
-		background: #fff;
-		color: #000;
-		border-radius: 20px;
-		font-size: 15px;
-		text-decoration: none;
-		font-weight: 500;
-		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-	    	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
-    }
-}
-@media (max-width: 600px) {
-	.logo {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-    }
 }
 .typewriter {
     font-family: 'Calibri', monospace;
@@ -265,6 +150,147 @@ margin-bottom: -2.5px;
       85.1% { opacity: 0; }
       100% { opacity: 0; }
   }
+
+
+
+
+
+/* Estilos para telas com 600px ou menos de largura */
+@media (max-width: 1270px) {
+	.center-card .card {
+		width: 350px;
+		height: 250px;
+	}
+}
+@media (max-width: 1270px){
+	#ankigptButton{
+
+		font-size: 16px;
+		position: fixed;
+		justify-content: center;
+		align-items: center;
+		display: inline-block;
+		padding: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-top: 180px;
+		font-size: 15;
+	}
+
+}
+@media (max-width: 600px) {
+    .center-card .card .content h1 {
+		color: rgba(255, 255, 255, 0.916);
+		font-weight: 600;
+		  font-size: 16px;
+		font-family: Calibri;
+		width: 150px;
+		text-align: center;
+		line-height: 1.5;
+		tab-size: 4;
+		margin-top: -80px;
+		text-shadow: 2px 1px 4px rgba(0, 0, 0, 1);
+			  font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+		-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+		-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+		-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+		-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	}   
+}
+
+
+@media (max-width: 600px) {
+	h4{
+		left: 20%;
+		font-size: 4em;
+		top: -4%;
+		color: rgba(255, 255, 255, 0.05);
+		filter: blur(5px);
+		pointer-events: none;
+		position: fixed;
+		font-weight: 900;
+    }
+}
+@media (max-width: 600px) {
+	h5{
+	font-size: 1em;
+	color: rgba(255, 255, 255, 0.577);
+	margin-top: -190px;
+	right: 10%;
+	z-index: 1;
+	font-family: calibri;
+	position: fixed;
+	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+    }
+}
+
+@media (max-width: 600px) {
+	.center-card .card{
+	position: relative;
+	margin-left: -13%;
+	margin-top: 100px;
+	width: 200px;
+	height: 250px;
+	background: rgba(56, 56, 56, 0.1);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	display: flex;
+	border-radius: 30px;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	-moz-backdrop-filter: blur(30px);
+	-o-backdrop-filter: blur(30px);
+	-ms-backdrop-filter: blur(30px);
+
+	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	justify-content: center;
+	align-items: center;
+}
+}
+@media (max-width: 600px) {
+	.center-card .card .content{
+		opacity: 1;
+	}
+}
+@media (max-width: 600px) {
+    #ankigptButton {
+		position: fixed;
+		display: inline-block;
+		padding: 4px 10px;
+		margin-top: 190px;
+		background: #fff;
+		color: #000;
+		border-radius: 20px;
+		font-size: 14px;
+		text-decoration: none;
+		font-weight: 500;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	    	font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	-webkit-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	-moz-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	-o-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+	-ms-font-family: 'Calibri', 'Arial Rounded MT','Avenir', 'Arial';
+    }
+}
+@media (max-width: 600px) {
+	.logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+    }
+}
+
+
   .logo {
 	display: flex;
 	justify-content: center;
@@ -272,7 +298,7 @@ margin-bottom: -2.5px;
 }
 
 .logo img {
-	width: 200px;
+	width: 150px;
 }
 
 
