@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="user">
+                            <img src="ankiGPT.png" alt="">
+                        </div>
+                        <span class="title"><div class="title1"></span>AnkiGPT</span></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Página inicial</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="aperture-outline"></ion-icon>
+                        </span>
+                        <span class="title">Modelo de carta</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="document-text"></ion-icon>
+                        </span>
+                        <span class="title">Instruções de uso</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="plano.html">
+                        <span class="icon">
+                            <ion-icon name="ribbon"></ion-icon>
+                        </span>
+                        <span class="title">Planos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </span>
+                        <span class="title">Redes Sociais</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+            
+                    
+
+        </div>
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+
+            </div>
+
+      
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Verifica se existe um link armazenado
+  var storedLink = localStorage.getItem('activeLink');
+  if (storedLink) {
+    // Adiciona a classe 'hovered' ao link armazenado
+    document.querySelector(storedLink).classList.add('hovered');
+  }
+});
+
+document.querySelectorAll('.navigation ul li a').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    // Remove a classe 'hovered' de todos os links
+    document.querySelectorAll('.navigation ul li').forEach(function(li) {
+      li.classList.remove('hovered');
+    });
+
+    // Adiciona a classe 'hovered' ao link clicado
+    var li = e.currentTarget.parentElement;
+    li.classList.add('hovered');
+
+    // Armazena o link clicado
+    localStorage.setItem('activeLink', '.navigation ul li:nth-child(' + (Array.from(li.parentNode.children).indexOf(li) + 1) + ')');
+  });
+});
+
+  
+  
+  </script>
+
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+
+<!-- ========================= pagina dashboard ==================== -->
+<div class="cardBox">
+
+
+
+  
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      
+    }
+
+    body {
+  
+     
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 500px;
+      height: 500px;
+      
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#SITE DO PLANO">
+        <img src="gifs/oclusão.gif" /></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#SITE DO PLANO">
+        <img src="planos/tranding-food-2.png" /></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#SITE DO PLANO">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" /></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#SITE DO PLANO">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" /></a>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 40,
+        stretch: 0,
+        depth: 700,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+
+
+</body>
+
+</html>
